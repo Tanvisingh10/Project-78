@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Family Book</title>
+    </head>
+    <body>
+        <h1>My Family Book</h1>
+        <br>
+        <img src="" id="family_member_image">
+        <h4 id="family_member_name"></h4>
+        <button onclick="update()">Next</button>
+    <var images = 
+    [" -father-clip.png", " images.png", " elder-kid-sister-holding-hands-67864109.jpg", " download.png"];></var>
+    
+    <var names =
+    [ " Santosh Kumar Singh ", " Bhabya Singh"," Tanvi Singh", " Trisha Singh" ]></var>
+
+   <var i = 0;
+function update(){
+ i++;
+ var number_of_members_in_array = 4
+ if( i > number_of_members_in_array)
+ {
+     i = 0;
+ }
+ <var updatedImage = images[i];></var>
+ <var  updatedName = names[i];></var>
+ document.getElementById("family_member_image").src = updatedImage;
+ document.getElementById("family_member_name").src = updatedName;
+}></var>
+    </body>
+</html>
